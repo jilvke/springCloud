@@ -7,7 +7,16 @@ spring:
     config:
       label: master
       profile: dev
-      uri: http://localhost:8888/
+  #    uri: http://localhost:8888/
+      discovery:
+        enabled: true
+        serviceId: config-server
+  rabbitmq:
+     host: localhost
+     port: 5672
+     username: springcloud
+     password: 123456
+     virtual-host: /
 eureka:
   client:
     serviceUrl:
