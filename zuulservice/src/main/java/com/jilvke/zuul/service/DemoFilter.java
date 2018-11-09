@@ -40,7 +40,10 @@ public class DemoFilter extends ZuulFilter {
     public int filterOrder() {
         return 0;
     }
-    // 是否执行该过滤器，此处为true，说明需要过滤
+
+    /***
+     * 是否执行该过滤器，此处为true，说明需要过滤
+     */
     @Override
     public boolean shouldFilter() {
         return false;

@@ -14,7 +14,7 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 @EnableHystrixDashboard
 public class FeignclientApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(FeignclientApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(FeignclientApplication.class, args);
+    }
 }
