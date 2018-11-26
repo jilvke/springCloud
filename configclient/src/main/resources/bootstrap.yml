@@ -1,8 +1,6 @@
-server:
-  port: 8881
 spring:
   application:
-    name: config-client
+    name: client-1
   cloud:
     config:
       label: master
@@ -11,13 +9,8 @@ spring:
       discovery:
         enabled: true
         serviceId: config-server
-  rabbitmq:
-     host: localhost
-     port: 5672
-     username: springcloud
-     password: 123456
-     virtual-host: /
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+## 刷新时，关闭安全验证
+management:
+  security:
+    enabled: false
+
