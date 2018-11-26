@@ -14,7 +14,15 @@ spring:
     port: 5672
     username: springcloud
     password: 123456
+encrypt:
+  key: didispace
+## 刷新时，关闭安全验证
+management:
+  security:
+    enabled: false
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}

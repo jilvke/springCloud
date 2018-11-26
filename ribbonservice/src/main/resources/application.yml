@@ -1,5 +1,5 @@
 server:
-  port: 8901
+  port: 8891
 spring:
   application:
     name: service-ribbon
@@ -7,3 +7,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
