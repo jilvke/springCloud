@@ -13,7 +13,6 @@ import org.springframework.stereotype.Component;
 public class ConfigClientServiceFailure implements ConfigClientService {
     @Override
     public String sayHello() {
-        System.out.println("hello world service is not available !");
         return "hello world service is not available --feign";
     }
 }
